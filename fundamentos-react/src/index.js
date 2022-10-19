@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom'; //? método
 import React from 'react'; //? react
 
 import Primeiro from './components/basicos/Primeiro';//? component
+import ComParametro from './components/basicos/ComParametro'
 
-const el = document.getElementById('root');
 const tag = <strong>Olá React!!!</strong>
 
 ReactDOM.render(
   <div>
     <Primeiro></Primeiro>
+    <ComParametro
+      titulo="Este é o título"
+      aluno="Henrique Neubert" nota={9.3}/>
   </div>, 
-  el
-)
+  document.getElementById('root')
+) 
