@@ -4,15 +4,15 @@ import React from 'react'; //? react
 
 import Primeiro from './components/basicos/Primeiro';//? component
 import ComParametro from './components/basicos/ComParametro'
-
-const tag = <strong>Olá React!!!</strong>
+import Fragmento from './components/basicos/Fragmento'
 
 ReactDOM.render(
-  <div>
+  <div id="app">
     <Primeiro></Primeiro>
     <ComParametro
       titulo="Este é o título"
       aluno="Henrique Neubert" nota={9.3}/>
+      <Fragmento />
   </div>, 
   document.getElementById('root')
 ) 
