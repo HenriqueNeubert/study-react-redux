@@ -7,12 +7,17 @@ import Aleatorio from "./components/basicos/Aleatorio";
 import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from "./components/basicos/Fragmento";
 import Primeiro from "./components/basicos/Primeiro";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
 
 export default (_) => (
   <div id="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">      
+
+      <Card title="#6 - Lista alunos" color="#1E90FF">
+      <ListaAlunos></ListaAlunos>
+      </Card>
 
       <Card title="#5 - Componentes com filhos" color="#708090">
         <Familia sobrenome="Neubert">
