@@ -9,6 +9,7 @@ import Fragmento from "./components/basicos/Fragmento";
 import Primeiro from "./components/basicos/Primeiro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import ListaProdutos from "./components/repeticao/ListaProdutos";
+import ParOuImpar from "./components/condicional/ParOuImpar";
 
 export default (_) => (
   <div id="App">
@@ -16,8 +17,12 @@ export default (_) => (
 
     <div className="Cards">      
 
+      <Card title="#8 - Renderização condicional" color="#B8860B">
+        <ParOuImpar></ParOuImpar>
+      </Card>
+
       <Card title="#7 - Lista Produtos" color="#556B2F">
-        <ListaProdutos></ListaProdutos>
+        <ListaProdutos numero={22}></ListaProdutos>
       </Card>
 
       <Card title="#6 - Lista alunos" color="#1E90FF">
