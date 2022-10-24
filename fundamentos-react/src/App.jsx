@@ -8,6 +8,7 @@ import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from "./components/basicos/Fragmento";
 import Primeiro from "./components/basicos/Primeiro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
+import ListaProdutos from "./components/repeticao/ListaProdutos";
 
 export default (_) => (
   <div id="App">
@@ -15,8 +16,12 @@ export default (_) => (
 
     <div className="Cards">      
 
+      <Card title="#7 - Lista Produtos" color="#556B2F">
+        <ListaProdutos></ListaProdutos>
+      </Card>
+
       <Card title="#6 - Lista alunos" color="#1E90FF">
-      <ListaAlunos></ListaAlunos>
+        <ListaAlunos></ListaAlunos>
       </Card>
 
       <Card title="#5 - Componentes com filhos" color="#708090">
