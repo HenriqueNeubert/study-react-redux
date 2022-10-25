@@ -12,17 +12,21 @@ import ListaProdutos from "./components/repeticao/ListaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicacao/DiretaPai";
-import IndiretaPai from "./components/comunicacao/IndiretaPai"
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import Input from "./components/formulario/Input";
 
 export default (_) => (
   <div id="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
-      <Card title="#10 - Comunicação Indireta" color="#B8860B">
+      <Card title="#11 - Componente controlado" color="#D8BFD8">
+        <Input></Input>
+      </Card>
+      <Card title="#10 - Comunicação Indireta" color="#CD5C5C">
         <IndiretaPai></IndiretaPai>
       </Card>
-      <Card title="#9 - Comunicação Direta" color="#B8860B">
+      <Card title="#9 - Comunicação Direta" color="#B0E0E6">
         <DiretaPai></DiretaPai>
       </Card>
       <Card title="#8 - Renderização condicional" color="#B8860B">
