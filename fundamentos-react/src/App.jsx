@@ -19,9 +19,7 @@ export default (_) => (
     <div className="Cards">
       <Card title="#8 - Renderização condicional" color="#B8860B">
         <ParOuImpar></ParOuImpar>
-        <UsuarioInfo usuario={{ nome: "Fernando" }}/>
-        <UsuarioInfo usuario={{ email: "Fer@nando.com" }}/>
-        <UsuarioInfo></UsuarioInfo> 
+        <UsuarioInfo usuario={{ nome: "Fernando" }}/>        
       </Card>
 
       <Card title="#7 - Lista Produtos" color="#556B2F">
