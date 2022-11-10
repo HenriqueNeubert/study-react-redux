@@ -15,13 +15,17 @@ import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import Input from "./components/formulario/Input";
 import Contador from './components/contador/Contador'
+import Sorteio  from "./components/mega/Sorteio";
 
 export default (_) => (
   <div id="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
-      <Card title="#12 - Contador" color="#D8BFD8">
+      <Card title="#13 - Sorteio" color="#A020F0">
+        <Sorteio qtde={8}></Sorteio>
+      </Card>
+      <Card title="#12 - Contador" color="#A020F0">
         <Contador numeroInicial={10}></Contador>
       </Card>
       <Card title="#11 - Componente controlado" color="#D8BFD8">
