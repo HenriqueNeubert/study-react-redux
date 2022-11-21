@@ -6,7 +6,7 @@ const About = props => (
       About
     </h1>
     <p>
-      SObre nós...
+      Sobre nós...
     </p>
   </div>
 )

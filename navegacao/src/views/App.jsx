@@ -7,7 +7,7 @@ import { BrowserRouter } from  'react-router-dom' // essa importação mudou
 
 const App = props => (
   <div className="App">
-    <BrowserRouter> 
+    <BrowserRouter>
       <Menu/>
       <Content/>
     </BrowserRouter> 
