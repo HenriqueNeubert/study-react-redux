@@ -2,9 +2,21 @@ import React from "react";
 import PageTitle from "../../components/layout/PageTitle";
 import SectionTitle from "../../components/layout/SectionTitle";
 import { useCounter } from "../../hooks/useCounter";
+import { useFetch } from "../../hooks/useFetch";
 
 const UseRef = (props) => {
-  const [count, inc, dec] = useCounter();
+  const [count, inc, dec] = useCounter(10);
+  const url = "http://files.cod3r.com.br/curso-react/estados.json";
+  const response = useFetch(url);
+
+  function showStates(states) {
+    return states.map((state => <p key={state.nome}>{state.nome} - {state.sigla}</p>));
+  }
+
+  //http://files.cod3r.com.br/curso-react/estados.json
+  //fetch('http://files.cod3r.com.br/curso-react/estados.json')
+  //  .then(resp => resp.json())
+  //  .then(json => console.log(json))
 
   return (
     <div className="UseCustom">
@@ -16,9 +28,17 @@ const UseRef = (props) => {
       <div className="center">
         <span className="text">{count}</span>
         <div>
-          <button className="btn" onClick={() => dec()}>Dec</button>
-          <button className="btn" onClick={() => inc()}>Inc</button>
+          <button className="btn" onClick={() => dec()}>
+            Dec
+          </button>
+          <button className="btn" onClick={() => inc()}>
+            Inc
+          </button>
         </div>
+      </div>
+      <SectionTitle titlw="Exercicio #02" />
+      <div className="center">
+        <div>{!response.loading ? showStates(response.data) : false}</div>
       </div>
     </div>
   );
