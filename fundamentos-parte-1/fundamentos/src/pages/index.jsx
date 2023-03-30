@@ -13,6 +13,8 @@ function Inicio(){
       <Navegador cor="red" texto="Estiloso" destino="/estiloso"/>
       <Navegador texto="Exemplo" destino="/exemplo"/>
       <Navegador cor="#9400d3" texto="JSX" destino="/jsx"/>
+      <Navegador cor="blueviolet" texto="Navegação #1" destino="/navegacao"/>
+      <Navegador cor="green" texto="Navegação #2" destino="/cliente/RS-2/1245"/>
     </div>
   )
 }
