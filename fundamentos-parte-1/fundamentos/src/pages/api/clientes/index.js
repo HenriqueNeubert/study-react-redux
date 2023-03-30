@@ -10,6 +10,11 @@ export default function handler(req, res) {
 function handleGet(req, res) {
   res.status(200).json({
     id: 2,
-    nome: 'henrique'
+    name: 'henrique',
+    params:  JSON.stringify(req.query),
+    nome: req.query.nome,
+    idade: +req.query.idade
   })
 }
+
+// http://localhost:3000/api/hello?nome=Henrique&idade=25
