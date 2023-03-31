@@ -1,4 +1,4 @@
-import Layout from "../../../components/Layout";
+import Layout from "../../components/Layout";
 import { useRouter } from "next/router";
 
 export default function ClientePorCodigo() {
@@ -9,9 +9,9 @@ export default function ClientePorCodigo() {
         <div>
           Código = {router.query.codigo}
         </div>
-        <div>
+        {/* <div>
           Filial = {router.query.filial}
-        </div>
+        </div> */}
       </span>
     </Layout>
   )
