@@ -5,7 +5,7 @@ export default class Cliente {
   private #nome: string
   private #idade: number
 
-  constructor(nome: string, idade: number, id: = null ) {
+  constructor(nome: string, idade: number, id: string = null ) {
     this.#nome = nome 
     this.#idade = idade
     this.#id = id 
