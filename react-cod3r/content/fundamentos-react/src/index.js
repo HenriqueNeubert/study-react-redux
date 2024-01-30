@@ -6,14 +6,14 @@ import First from './components/basics/First'
 import ComParam from './components/basics/Comparam'
 
 ReactDOM.render(
-    <div>
+    <React.Fragment>
         <First/>
         <ComParam 
             titulo="Teste titulo!!!" 
             subtitulo="teste subtitulo"
-            numero={55}
+            numero={49}
         />
-    </div>
+    </React.Fragment>
     , 
     document.getElementById('root')
 )
