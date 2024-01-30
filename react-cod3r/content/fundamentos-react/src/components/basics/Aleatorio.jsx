@@ -10,8 +10,7 @@ export default (props) => {
     <div>
         <p>Minimo: {min}</p>
         <p>Maximo: {max}</p>
-        <p>{aleatorio}</p>
-      
+        <p>Aleatório: {aleatorio}</p>
     </div>
   );
 };

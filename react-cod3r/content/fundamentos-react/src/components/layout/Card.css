@@ -1,0 +1,55 @@
+.Card{
+    max-width: 200px;
+    min-width: 200px;
+    border-radius: 3px;
+    background-color: #666;
+    
+    display: flex;
+    flex-direction: column;
+    
+    margin: 5px;
+    border: 1.5px solid #666;
+    /* padding: 5px; */
+}
+
+.Card .titulo{
+    color: #666;
+    font-size: 1.3rem;
+    
+    display: flex;
+    justify-content: center;
+    
+    padding: 3px 5px;
+    border-radius: 1px;
+    background-color: #444;
+}
+
+.Card .conteudo{
+    padding: 1px 3px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Card .conteudo p{
+    margin: 1px 3px;
+    
+    font-size: 1rem;
+    text-align: center;
+}
+
+.Card .conteudo h1, .Card .conteudo h2, .Card .conteudo h3, .Card .conteudo h4, .Card .conteudo h5{
+    font-size: 1rem;
+    text-align: center;
+    
+    margin: 1px 3px;
+}
+
+.listCard{
+    display: flex;
+    flex-wrap: no-wrap;
+
+    border-radius: 3px;
+    background-color: #444;
+}
