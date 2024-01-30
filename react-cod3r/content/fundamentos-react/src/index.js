@@ -2,13 +2,17 @@ import './index.css'
 import ReactDOM from 'react-dom'
 import React from 'react'
 
-import Primeiro from './components/basics/First'
+import First from './components/basics/First'
+import ComParam from './components/basics/Comparam'
 
-const title = <h1>Olá!!!</h1>
 ReactDOM.render(
     <div>
-        <Primeiro/>
-        { title }
+        <First/>
+        <ComParam 
+            titulo="Teste titulo!!!" 
+            subtitulo="teste subtitulo"
+            numero={55}
+        />
     </div>
     , 
     document.getElementById('root')
